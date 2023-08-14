@@ -1,5 +1,6 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from '../src/pages/Home';
 
 
 
@@ -9,9 +10,9 @@ const App: React.FC = () =>  {
   return (
     <Router>
       <div className='container mx-auto'>
-       <Switch>
-        <Route path='/' exact Component={Home}/>
-       </Switch>
+       <Routes>
+        <Route path='/Home' Component={Home} />
+       </Routes>
       </div>
     </Router>
   )
